@@ -1,29 +1,32 @@
 #playerStats {
-	width: 100px;
+	width: 90%;
+	margin: 0 5%;
 }
 .nav {
-	position: absolute
-	width: 10px;
-	left: 30%;
-	top: 100px;
+	position: absolute;
+	width: 250px;
+	top: 110px;
 }
 #header {
 	width: 100%;
-	height: 200px;
+	height: 150px;
 }
 #teamLogo {
-	position: absolute;
+	position: relative;
+	left: 16px;
 }
 .teamName {
 	position: absolute;
-	width: 40%;
-	left: 30%;
-	top: 50px;
+	width: 400px;
+	left: 16px;
+	top: 100px;
+	font-size: 20px;
 }
 .teamCity {
-	position: absolute;
-	width: 40%;
-	left: 30%;
+	width: 100px;
+	left: 205px;
+	top: 10px;
+	margin: 0;
 }
 .teamTableImage {
 	width: 65px;
@@ -36,15 +39,28 @@
 #Eastern {
 	position: relative;
 	width: 100%;
-	font-size: 22px;
+	height: 40px;
+	font-size: 30px;
+	padding: 0 0 0 10px;
 	margin: 0;
 	background-color: #d33;
+	color: white;
 }
 #Western {
 	position: relative;
 	width: 100%;
-	font-size: 22px;
+	height: 40px;
+	font-size: 30px;
+	padding: 0 0 0 10px;
 	margin: 0;
+	background-color: #0645ad;
+	color: white;
+}
+.easternDivision{
+	font-size: 20px;
+}
+.westernDivision{
+	font-size: 20px;
 }
 #teamTable {
 	width: 900px;
@@ -53,7 +69,13 @@
 #tableContainer {
 	position: relative;
 }
-
+.logo {
+	height: 175px;
+	width: 175px;
+}
+.headerTitle {
+	color: white;
+}
 @media (min-width: 576px) {
 	.eight-cols .col-sm-1 {
 		flex: 0 0 12.5%;
