@@ -25,3 +25,30 @@
 	width: 40%;
 	left: 30%;
 }
+.teamTableImage {
+	width: 65px;
+	height: 50px;
+}
+.teamLink{
+	width: 65px;
+	height: 50px;
+}
+#Eastern {
+	position: relative;
+	width: 100%;
+	font-size: 22px;
+	margin: 0;
+}
+#Western {
+	position: relative;
+	width: 100%;
+	font-size: 22px;
+	margin: 0;
+}
+#teamTable {
+	width: 900px;
+	font-size: 22px;
+}
+#tableContainer {
+	position: relative;
+}

@@ -9,7 +9,7 @@
 
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Home</title>
+	<title>Hockey Fanatics</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,8 @@
 	<!-- Plugin CSS -->
 	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
+	<link rel="stylesheet" href="css/style.css">
+
 	<!-- Custom styles for this template -->
 	<!-- <link href="public/stylesheets/sb-admin.css" rel="stylesheet"> -->
 
@@ -29,7 +31,7 @@
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-		<a class="navbar-brand" href="#">Forum/chat</a>
+		<h2>Hockey Fanatics</h2>
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 		  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,9 +40,8 @@
 			<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 				<li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
 					<a class="nav-link" href="#">
-              <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">
-                Dashboard</span>
+                    <span class="nav-link-text">
+                Home</span>
             </a>
 				</li>
 
@@ -57,7 +58,7 @@
 					<a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
               <i class="fa fa-fw fa-file"></i>
               <span class="nav-link-text">
-                Example Pages</span>
+                Teams</span>
             </a>
 					<ul class="sidenav-second-level collapse" id="collapseExamplePages">
 						<li>
@@ -149,19 +150,74 @@
 
 	<div class="content-wrapper">
 		<div class="jumbotron"></div>
-		<div class="container-fluid">Breadcrumbs
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item">
-					<a href="#">Dashboard</a>
-				</li>
-				<li class="breadcrumb-item active">My Dashboard</li>
-			</ol>
-			<!-- Example Tables Card -->
+		<div class="container-fluid">
 			<div class="card mb-3">
 				<div class="card-header">
-					<i class="fa fa-table"></i> Data Table Example
-					<div class="card-footer small text-muted">
-						Updated yesterday at 11:59 PM
+					<div class="card-footer small text-muted" id="tableContainer">
+						<div class="row">
+							<div class="col-sm-6"><h2 id="Eastern">Eastern Conference</h2></div>
+							<div class="col-sm-6"><h2 id="Western">Western Conference</h2></div>
+						</div>
+						<table id="teamTable">
+							<tr>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>
+								<td>
+									<form action="">
+										<a href="/bluejackets" class="teamLink">
+											<img src="/images/bluejackets.png" alt="" class="teamTableImage">
+										</a>
+									</form>
+								</td>																																
+							</tr>
+						</table>
 					</div>
 				</div>
 
