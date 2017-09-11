@@ -38,6 +38,7 @@
 	width: 100%;
 	font-size: 22px;
 	margin: 0;
+	background-color: #d33;
 }
 #Western {
 	position: relative;
@@ -51,4 +52,11 @@
 }
 #tableContainer {
 	position: relative;
+}
+
+@media (min-width: 576px) {
+	.eight-cols .col-sm-1 {
+		flex: 0 0 12.5%;
+		max-width: 12.5%;
+	}
 }
