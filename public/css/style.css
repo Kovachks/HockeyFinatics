@@ -1,0 +1,54 @@
+#playerStats {
+	width: 100px;
+}
+.nav {
+	position: absolute
+	width: 10px;
+	left: 30%;
+	top: 100px;
+}
+#header {
+	width: 100%;
+	height: 200px;
+}
+#teamLogo {
+	position: absolute;
+}
+.teamName {
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	top: 50px;
+}
+.teamCity {
+	position: absolute;
+	width: 40%;
+	left: 30%;
+}
+.teamTableImage {
+	width: 65px;
+	height: 50px;
+}
+.teamLink{
+	width: 65px;
+	height: 50px;
+}
+#Eastern {
+	position: relative;
+	width: 100%;
+	font-size: 22px;
+	margin: 0;
+}
+#Western {
+	position: relative;
+	width: 100%;
+	font-size: 22px;
+	margin: 0;
+}
+#teamTable {
+	width: 900px;
+	font-size: 22px;
+}
+#tableContainer {
+	position: relative;
+}
