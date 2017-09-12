@@ -15,6 +15,50 @@
 	width: 90%;
 	margin: 0px 5% 100px 5%;
 }
+/* a links ************************************************/
+#alinkcolor{
+	color:#151617;
+}
+	#alink {
+		width: 200px;
+		text-align: center;
+		margin: auto;
+		padding: auto;
+		border-radius: 10px;
+		background-color:#5E8AC1;
+		color:black;
+list-style:none;
+text-decoration: none;
+}
+	#alink :hover{
+		color:rgba(96, 12, 0, 0.93);
+		text-decoration: none;
+	}
+		#container-fluid {
+margin-top:120px;
+	}
+		div#navbarResponsive.collapse.navbar-collapse {
+			width: 100%;
+			/* padding-left: 200px; */
+			margin-left:100px;
+		/* padding-right: 50px; */
+			text-align: center;
+			position: relative;
+			float: right;
+			max-width: 500px;
+	}
+  		.navbar-dark .navbar-nav .nav-link{
+				max-width: 100%;
+				font-size: 18px;
+				color: snow;
+			margin-right: 50px;
+			text-align: center;
+
+		}
+
+
+
+/* ***************************************************************** */
 .nav {
 	width: 100%;
 }
@@ -41,6 +85,7 @@
 	margin: 0;
 }
 .teamTableImage {
+	
 	width: 65px;
 	height: 50px;
 }
@@ -49,6 +94,9 @@
 	height: 50px;
 }
 #Eastern {
+		text-shadow: 10px -4px 9px black;
+
+ box-shadow: 1px 1px 13px 4px black;
 	position: relative;
 	width: 100%;
 	height: 40px;
@@ -59,6 +107,9 @@
 	color: white;
 }
 #Western {
+		text-shadow: 10px -4px 9px black;
+
+ box-shadow: 1px 1px 13px 4px black;
 	position: relative;
 	width: 100%;
 	height: 40px;
@@ -87,6 +138,7 @@
 	width: 175px;
 }
 .headerTitle {
+	text-shadow: 10px -4px 9px black;
 	color: white;
 }
 @media (min-width: 576px) {

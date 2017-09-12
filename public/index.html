@@ -19,7 +19,7 @@
 
 	<!-- Plugin CSS -->
 	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
+	<!-- animatetedd -->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Custom styles for this template -->
@@ -31,22 +31,23 @@
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+
 		<img src="/images/nhl.png" alt="" class="logo">
 		<h2 class="headerTitle">Hockey Fanatics</h2>
+
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 		  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+			</button>
+
+
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 				<li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
-					<a class="nav-link" href="#">
-                    <span class="nav-link-text">
-                Home</span>
-            </a>
+					<a class="nav-link" href="#"><span class="nav-link-text"> Home</span></a>
 				</li>
-
-				<ul class="sidenav-second-level collapse" id="collapseComponents">
+			
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
 					<li>
 						<a href="static-nav.html">Static Navigation</a>
 					</li>
@@ -62,18 +63,18 @@
                 Teams</span>
             </a>
 					<ul class="sidenav-second-level collapse" id="collapseExamplePages">
-						<li>
-							<a href="login.html">Login Page</a>
-						</li>
-						<li>
-							<a href="register.html">Registration Page</a>
-						</li>
-						<li>
-							<a href="forgot-password.html">Forgot Password Page</a>
-						</li>
-						<li>
-							<a href="blank.html">Blank Page</a>
-						</li>
+						<li id="alink">
+							<a href="login.html "  id="alinkcolor">Login Page</a>
+						</li><br>
+						<li id="alink">
+							<a href="register.html " id="alinkcolor">Registration Page</a>
+						</li><br>
+						<li id="alink">
+							<a href="forgot-password.html " id="alinkcolor">Forgot Password Page</a>
+						</li><br>
+						<li id="alink">
+							<a href="blank.html " id="alinkcolor">Blank Page</a>
+						</li><br>
 					</ul>
 				</li>
 
@@ -98,7 +99,7 @@
 				</ul>
 				</li>
 
-
+				
 				<li class="nav-item dropdown">
 
 					<div class="dropdown-menu" aria-labelledby="alertsDropdown">
@@ -150,14 +151,20 @@
 	</nav>
 
 	<div class="content-wrapper">
-		<div class="jumbotron"></div>
-		<div class="container-fluid">
+		<div class="jumbotron">
+			<div>
+			</div><br></div>
+		<div class="container-fluid" id="container-fluid" >
 			<div class="card mb-3">
-				<div class="card-header">
+				<div class="card-header" id="card-header">
 					<div class="card-footer small text-muted" id="tableContainer">
 						<div class="row">
-							<div class="col-sm-6"><h2 id="Eastern">Eastern Conference</h2></div>
-							<div class="col-sm-6"><h2 id="Western">Western Conference</h2></div>
+							<div class="col-sm-6">
+								<h2 id="Eastern">Eastern Conference</h2>
+							</div>
+							<div class="col-sm-6">
+								<h2 id="Western">Western Conference</h2>
+							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-3 easternDivision">Atlantic Division</div>
@@ -166,237 +173,237 @@
 							<div class="col-sm-3 westernDivision">Pacific Division</div>
 						</div>
 						<div class="row eight-cols">
-							<div class="col-sm-1" >	
-								<form action="" >
+							<div class="col-sm-1">
+								<form action="">
 									<a href="/bruins" class="teamLink">
 										<img src="/images/bruins.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1" >	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/sabres" class="teamLink">
 										<img src="/images/sabres.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/hurricanes" class="teamLink">
 										<img src="/images/hurricanes.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/bluejackets" class="teamLink">
 										<img src="/images/bluejackets.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/blackhawks" class="teamLink">
 										<img src="/images/blackhawks.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/avalanche" class="teamLink">
 										<img src="/images/avalanche.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/ducks" class="teamLink">
 										<img src="/images/ducks.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/coyotes" class="teamLink">
 										<img src="/images/coyotes.png" alt="" class="teamTableImage">
 									</a>
-								</form>	
-							</div>														
+								</form>
+							</div>
 						</div>
 						<br>
 						<div class="row eight-cols">
-							<div class="col-sm-1" >	
-								<form action="" >
+							<div class="col-sm-1">
+								<form action="">
 									<a href="/redwings" class="teamLink">
 										<img src="/images/redwings.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1" >	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/panthers" class="teamLink">
 										<img src="/images/panthers.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/devils" class="teamLink">
 										<img src="/images/devils.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/islanders" class="teamLink">
 										<img src="/images/islanders.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/stars" class="teamLink">
 										<img src="/images/stars.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/wild" class="teamLink">
 										<img src="/images/wild.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/flames" class="teamLink">
 										<img src="/images/flames.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/oilers" class="teamLink">
 										<img src="/images/oilers.png" alt="" class="teamTableImage">
 									</a>
-								</form>	
-							</div>														
+								</form>
+							</div>
 						</div>
 						<br>
 						<div class="row eight-cols">
-							<div class="col-sm-1" >	
-								<form action="" >
+							<div class="col-sm-1">
+								<form action="">
 									<a href="/canadiens" class="teamLink">
 										<img src="/images/canadiens.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1" >	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/senators" class="teamLink">
 										<img src="/images/senators.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/rangers" class="teamLink">
 										<img src="/images/rangers.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/flyers" class="teamLink">
 										<img src="/images/flyers.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/predators" class="teamLink">
 										<img src="/images/predators.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/blues" class="teamLink">
 										<img src="/images/blues.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/kings" class="teamLink">
 										<img src="/images/kings.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/sharks" class="teamLink">
 										<img src="/images/sharks.png" alt="" class="teamTableImage">
 									</a>
-								</form>	
-							</div>														
+								</form>
+							</div>
 						</div>
 						<br>
 						<div class="row eight-cols">
-							<div class="col-sm-1" >	
-								<form action="" >
+							<div class="col-sm-1">
+								<form action="">
 									<a href="/lightning" class="teamLink">
 										<img src="/images/lightning.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1" >	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/mapleleafs" class="teamLink">
 										<img src="/images/mapleleafs.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/penguins" class="teamLink">
 										<img src="/images/penguins.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/capitals" class="teamLink">
 										<img src="/images/capitals.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/jets" class="teamLink">
 										<img src="/images/jets.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/canucks" class="teamLink">
 										<img src="/images/canucks.png" alt="" class="teamTableImage">
 									</a>
 								</form>
 							</div>
-							<div class="col-sm-1">	
+							<div class="col-sm-1">
 								<form action="">
 									<a href="/goldenknights" class="teamLink">
 										<img src="/images/goldenknights.png" alt="" class="teamTableImage">
 									</a>
-								</form>	
-							</div>														
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -411,7 +418,7 @@
 	<footer class="sticky-footer">
 		<div class="container">
 			<div class="text-center">
-				
+
 			</div>
 		</div>
 	</footer>
