@@ -1,5 +1,7 @@
 var path = require("path");
 
+var db = require("../models");
+
 var express = require("express");
 
 var router = express.Router();
@@ -25,14 +27,24 @@ module.exports = function(app) {
       });
 };
 
+<<<<<<< HEAD
+=======
 // router.get("/", function(req, res) {
 // 	res.sendFile(path.join(__dirname, "../public/index.html"))
 // });
 
+>>>>>>> b6685613f5e70cba8c5a971d3c721a9f3328b0ce
 router.get("/:team", function(req, res) {
 	var team = req.params.team;
-	console.log("test: " + team)
-	res.render(team)
+	// console.log(JSON.stringify(db))
+	db.teaminfo.findOne({
+		where: {
+			teamMascot: team
+		}
+	}).then(function(result) {
+	res.render("team", {team:result})
+	console.log(JSON.stringify(result))	
+	});
 });
 // LOGIN PAGE
 

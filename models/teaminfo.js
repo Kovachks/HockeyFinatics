@@ -4,5 +4,8 @@ module.exports = function(sequelize, DataTypes) {
 		teamName: DataTypes.STRING,
 		primaryColor: DataTypes.STRING,
 		secondaryColor: DataTypes.STRING
-	})
+	},{
+		timestamps: false
+	});
+	return TeamInfo;
 }
