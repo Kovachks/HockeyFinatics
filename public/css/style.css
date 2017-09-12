@@ -9,12 +9,14 @@
 }
 #playerStats {
 	width: 90%;
-	margin: 50px 5%;
+	margin: 0px 5% 0 5%;
+}
+#teamSchedule {
+	width: 90%;
+	margin: 0px 5% 100px 5%;
 }
 .nav {
-	position: absolute;
 	width: 100%;
-	top: 130px;
 }
 #header {
 	width: 100%;
@@ -92,4 +94,12 @@
 		flex: 0 0 12.5%;
 		max-width: 12.5%;
 	}
+}
+.sectionHeader {
+	margin: 15px 0 0 5%;
+}
+.scheduleImage {
+	height: 35px;
+	width: 35px;
+	margin: 0 0 0 16px;
 }
