@@ -10,5 +10,5 @@ module.exports = function(sequelize, DataTypes) {
 		assists: DataTypes.INTEGER,
 		points: DataTypes.INTEGER
 	});
-	return PlayerStats
+	return PlayerStats;
 };

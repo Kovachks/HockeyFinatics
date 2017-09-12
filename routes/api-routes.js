@@ -2,7 +2,8 @@ var db = require("../models");
 
 module.exports = function(app) {
 	app.get("/:team", function(req, res){
-		db.teamInfo
+		var team = req.params.team;
+		console.log(db.TeamInfo.team)
 	});
 
 	app.post("/api/forum", function(req, res) {
