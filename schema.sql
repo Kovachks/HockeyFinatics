@@ -40,3 +40,5 @@ create table playerStats (
     primary key (player_id)
 );
 
+
+
