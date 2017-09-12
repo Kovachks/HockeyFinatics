@@ -42,31 +42,13 @@ create table playerStats (
 
 use hockeyStats_db;
 
-select * from teaminfo;
-
-create table teaminfo (
-	team_id integer(5) Auto_Increment NOT NULL,
+create table teaminfos (
+	id integer(5) Auto_Increment NOT NULL,
     teamMascot VARCHAR(30) NOT NULL,
     teamName VARCHAR(100) NOT NULL,
     primaryColor VARCHAR(10) NOT NULL,
     secondaryColor VARCHAR(10) NOT NULL,
-    primary key(team_id)
+    primary key(id)
 );
 
-<<<<<<< HEAD
 
-
-=======
-use hockeyStats_db;
-
-select * from teaminfo;
-
-create table teaminfo (
-	team_id integer(5) Auto_Increment NOT NULL,
-    teamMascot VARCHAR(30) NOT NULL,
-    teamName VARCHAR(100) NOT NULL,
-    primaryColor VARCHAR(10) NOT NULL,
-    secondaryColor VARCHAR(10) NOT NULL,
-    primary key(team_id)
-);
->>>>>>> a85cd9375f04fc28cb7164ea12764d7a57c13cbe
