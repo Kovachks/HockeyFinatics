@@ -27,13 +27,11 @@ module.exports = function(app) {
       });
 };
 
-<<<<<<< HEAD
-=======
 // router.get("/", function(req, res) {
 // 	res.sendFile(path.join(__dirname, "../public/index.html"))
 // });
 
->>>>>>> b6685613f5e70cba8c5a971d3c721a9f3328b0ce
+
 router.get("/:team", function(req, res) {
 	var team = req.params.team;
 	// console.log(JSON.stringify(db))
@@ -46,6 +44,9 @@ router.get("/:team", function(req, res) {
 	console.log(JSON.stringify(result))	
 	});
 });
+router.get("/registration", function(reg, res) {
+	res.render(registration)
+})
 // LOGIN PAGE
 
 
