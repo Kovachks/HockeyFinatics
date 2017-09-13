@@ -1,7 +1,6 @@
 
 use hockeystats_db;
 
-
 insert into teaminfos (teamMascot, teamName, primaryColor, secondaryColor)
 values("avalanche", "Colorado Avalanche", "#236192", "#6f263d");
 
@@ -91,3 +90,6 @@ values("capitals","Washington Capitals", "#041e42", "#a6192e");
 
 insert into teaminfos (teamMascot, teamName, primaryColor, secondaryColor)
 values("jets","Winnipeg Jets", "#041e42", "#c8102e");
+
+insert into teaminfos (teamMascot, teamName, primaryColor, secondaryColor)
+values("mapleleafs", "Toronto Maple Leafs", "#013e7f", "#ffffff");
