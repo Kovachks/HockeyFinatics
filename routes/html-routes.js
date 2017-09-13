@@ -27,11 +27,14 @@ module.exports = function(app) {
       });
 };
 
+<<<<<<< HEAD
 // router.get("/", function(req, res) {
 // 	res.sendFile(path.join(__dirname, "../public/index.html"))
 // });
 
 
+=======
+>>>>>>> b2b20770d9e3a90c1ee096c72a87d76e9e34f403
 router.get("/:team", function(req, res) {
 	var team = req.params.team;
 	// console.log(JSON.stringify(db))
