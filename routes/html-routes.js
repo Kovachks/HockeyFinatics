@@ -27,31 +27,28 @@ module.exports = function(app) {
       });
 };
 
-<<<<<<< HEAD
-// router.get("/", function(req, res) {
-// 	res.sendFile(path.join(__dirname, "../public/index.html"))
-// });
-
-
-=======
->>>>>>> b2b20770d9e3a90c1ee096c72a87d76e9e34f403
 router.get("/:team", function(req, res) {
 	var team = req.params.team;
-	// console.log(JSON.stringify(db))
-	db.teaminfo.findOne({
+	// db.teaminfo.findOne({
+	// 	where: {
+	// 		teamMascot: team
+	// 	}
+	// }).then(function(result) {
+	// res.render("team", {team:result})
+	// console.log("result: " + result)
+	// });
+	db.playerStats.findAll({
 		where: {
-			teamMascot: team
+			mascot: team
 		}
 	}).then(function(result) {
 	res.render("team", {team:result})
-	console.log(JSON.stringify(result))	
+	console.log("result: " + result)
 	});
 });
 router.get("/registration", function(reg, res) {
 	res.render(registration)
 })
 // LOGIN PAGE
-
-
 
 module.exports = router;

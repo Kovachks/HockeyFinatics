@@ -27,17 +27,18 @@ create table teamStats (
 use hockeyStats_db;
 
 create table playerStats (
-    player_id integer(5) not null,
+    id integer(5) auto_increment not null,
     name varchar(35) not null,
     age integer(3) not null,
     nationality varchar(35) not null,
     team varchar(35) not null,
+    mascot varchar(35) not null,
     position varchar(35) not null,
     games_played integer(5) not null,
     goals integer(3) not null,
     assists integer(3) not null,
     points integer(3) not null,
-    primary key (player_id)
+    primary key(id)
 );
 
 use hockeyStats_db;

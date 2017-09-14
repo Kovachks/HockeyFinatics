@@ -2,7 +2,7 @@
     <img src="/images/{{team.teamMascot}}.png" alt="" id="teamLogo" style="height: 100px; width: 150px;">
       <h1 class="teamName" style="color: white">{{team.teamName}}</h1>
   </div>
-  <ul class="nav" id="nav" style="background-color: {{team.secondaryColor}}">
+  <ul class="nav" id="nav" style="background-color: {{team.secondaryColor}}"> 
       <li class="nav-item">
         <a class="nav-link active" href="/">Home</a>
       </li>
@@ -31,39 +31,19 @@
     </tr>
   </thead>
   <tbody>
+    {{#each team}}
     <tr>
-      <td>Cam Atkinson</td>
-      <td>28</td>
-      <td>USA</td>
-      <td>CBJ</td>
-      <td>RW</td>
-      <td>82</td>
-      <td>35</td>
-      <td>27</td>
-      <td>62</td>
+      <td>{{name}}</td>
+      <td>{{age}}</td>
+      <td>{{nationality}}</td>
+      <td>{{team}}</td>
+      <td>{{position}}</td>
+      <td>{{games_played}}</td>
+      <td>{{goals}}</td>
+      <td>{{assists}}</td>
+      <td>{{points}}</td>
     </tr>
-    <tr>
-      <td>Alexander Wennberg</td>
-      <td>22</td>
-      <td>SWE</td>
-      <td>CBJ</td>
-      <td>C</td>
-      <td>80</td>
-      <td>13</td>
-      <td>46</td>
-      <td>59</td>
-    </tr>
-    <tr>
-      <td>Brandon Saad</td>
-      <td>24</td>
-      <td>USA</td>
-      <td>CBJ</td>
-      <td>LW</td>
-      <td>82</td>
-      <td>24</td>
-      <td>29</td>
-      <td>53</td>
-    </tr>
+    {{/each}}
   </tbody>
 </table>
 <h2 class="sectionHeader">Schedule</h2>

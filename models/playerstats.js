@@ -4,11 +4,15 @@ module.exports = function(sequelize, DataTypes) {
 		age: DataTypes.INTEGER,
 		nationality: DataTypes.STRING,
 		team: DataTypes.STRING,
+		mascot: DataTypes.STRING,
 		position: DataTypes.STRING,
 		games_played: DataTypes.INTEGER,
 		goals: DataTypes.INTEGER,
 		assists: DataTypes.INTEGER,
 		points: DataTypes.INTEGER
+	},
+	{
+	timestamps: false
 	});
 	return PlayerStats;
 };
