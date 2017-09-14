@@ -7,10 +7,9 @@ module.exports = function(sequelize, DataTypes) {
 	},{
 		timestamps: false,
 	});
-
 	TeamInfo.associate = function(models) {
 		TeamInfo.hasMany(models.playerStats, {
-		foreignKey: 'mascot'
+		foreignKey: 'mascot',
 		});
 	}
 	return TeamInfo;

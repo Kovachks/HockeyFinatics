@@ -16,7 +16,8 @@ module.exports = function(sequelize, DataTypes) {
 
 	PlayerStats.associate = function(models) {
 		PlayerStats.belongsTo(models.teaminfo, {
-		foreignKey: 'mascot'
+		foreignKey: 'mascot',
+		targetKey: 'mascot'		
 		});
 	}
 	return PlayerStats;
