@@ -33,17 +33,17 @@ router.get("/:team", function(req, res) {
 	// 	where: {
 	// 		teamMascot: team
 	// 	}
-	// }).then(function(result) {
-	// res.render("team", {team:result})
+	// }).then(function(result) {`
+	// res.render("team", {team:`r`esult})
 	// console.log("result: " + result)
 	// });
-	db.playerStats.findAll({
+	db.teaminfo.findOne({
 		where: {
 			mascot: team
 		},
 		include: [
 		{
-			model: db.teaminfo,
+			model: db.playerStats,
 		}]
 	}).then(function(result) {
 	console.log("Result: " + JSON.stringify({team:result}))		

@@ -26,6 +26,7 @@ create table teamStats (
 
 use hockeyStats_db;
 
+select * from playerStats;
 
 create table playerStats (
     id integer(5) auto_increment not null,
@@ -45,7 +46,7 @@ create table playerStats (
 use hockeyStats_db;
 
 create table teaminfos (
-	id integer(5) Auto_Increment NOT NULL,
+	team_id integer(5) Auto_Increment NOT NULL,
     mascot VARCHAR(30) NOT NULL,
     teamName VARCHAR(100) NOT NULL,
     primaryColor VARCHAR(10) NOT NULL,

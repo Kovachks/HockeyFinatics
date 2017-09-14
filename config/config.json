@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Kihkvc90!",
+    "password": "root",
     "database": "hockeystats_db",
     "host": "localhost",
     "dialect": "mysql"
