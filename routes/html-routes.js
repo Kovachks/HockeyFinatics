@@ -33,8 +33,8 @@ router.get("/:team", function(req, res) {
 	// 	where: {
 	// 		teamMascot: team
 	// 	}
-	// }).then(function(result) {
-	// res.render("team", {team:result})
+	// }).then(function(result) {`
+	// res.render("team", {team:`r`esult})
 	// console.log("result: " + result)
 	// });
 	db.teaminfo.findOne({
