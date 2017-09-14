@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +19,11 @@
 	<!-- Plugin CSS -->
 	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 	<!-- animatetedd -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="animation/animate.css">
+	<link rel="stylesheet" href="css/footer.css">
 
 	<!-- Custom styles for this template -->
 	<!-- <link href="public/stylesheets/sb-admin.css" rel="stylesheet"> -->
@@ -31,8 +34,12 @@
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-
-		<img src="/images/nhl.png" alt="" class="logo">
+<div id="animLogo">
+	<img src="/images/nhl.png" alt="" class="logo">
+	<div id="paraAnim">
+		<p id="pipa">Follow us, with latest uptades, in the Hockey world </p>
+	</div>
+</div>
 		<h2 class="headerTitle">Hockey Fanatics</h2>
 
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -46,8 +53,8 @@
 				<li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
 					<a class="nav-link" href="#"><span class="nav-link-text"> Home</span></a>
 				</li>
-			
-          <ul class="sidenav-second-level collapse" id="collapseComponents">
+
+				<ul class="sidenav-second-level collapse" id="collapseComponents">
 					<li>
 						<a href="static-nav.html">Static Navigation</a>
 					</li>
@@ -64,7 +71,7 @@
             </a>
 					<ul class="sidenav-second-level collapse" id="collapseExamplePages">
 						<li id="alink">
-							<a href="/login "  id="alinkcolor">Login Page</a>
+							<a href="/login " id="alinkcolor">Login Page</a>
 						</li><br>
 						<li id="alink">
 							<a href="/registration" id="alinkcolor">Registration Page</a>
@@ -74,7 +81,7 @@
 						</li><br>
 						<li id="alink">
 							<a href="/contact " id="alinkcolor">Contact Us</a>
-							 <!-- id="alinkcolor" -->
+							<!-- id="alinkcolor" -->
 						</li><br>
 					</ul>
 				</li>
@@ -100,7 +107,7 @@
 				</ul>
 				</li>
 
-				
+
 				<li class="nav-item dropdown">
 
 					<div class="dropdown-menu" aria-labelledby="alertsDropdown">
@@ -155,7 +162,7 @@
 		<div class="jumbotron">
 			<div>
 			</div><br></div>
-		<div class="container-fluid" id="container-fluid" >
+		<div class="container-fluid" id="container-fluid">
 			<div class="card mb-3">
 				<div class="card-header" id="card-header">
 					<div class="card-footer small text-muted" id="tableContainer">
@@ -408,51 +415,122 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<!-- /.container-fluid -->
-
 		</div>
 	</div>
 	<!-- /.content-wrapper -->
 	</div>
-	<footer class="sticky-footer">
+	<br><br> <br><br>
+
+	<!-- <footer class="sticky-footer">
 		<div class="container">
 			<div class="text-center">
 
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 
 	<!-- Scroll to Top Button -->
-	 <div>
-	<div class="wrapper">
-		<a class="scroll-to-top rounded" href="#page-top" id="myBtn">
-    <i class="fa fa-angle-up"></i></a>
-</div>
-</div>
 
-	<!-- Logout Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-				</div>
-				<div class="modal-body">
-					Select "Logout" below if you are ready to end your current session.
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-					<a class="btn btn-primary" href="login.html">Logout</a>
+	<div class="wrapper">
+
+		<a class="scroll-to-top rounded" href="#page-top" id="myBtn">
+     <i class="fa fa-get-pocket" aria-hidden="true"></i></a>
+		<!-- ANIMATION -->
+		<div id="poverh">
+			<div class="content">
+				<div class="content__container">
+					<p class="content__container__text" style="color:cornflowerblue;">
+						Hockey-Fanatiks:
+					</p>
+					<ul class="content__container__list">
+						<li class="content__container__list__item" style="color:#EC8080;"><i class="fa fa-heart-o" aria-hidden="true"></i> Tiara Hamilton</li>
+						<li class="content__container__list__item" style="color:#4FD2CC;">Keith Kovach</li>
+						<li class="content__container__list__item" style="color:#F8E95F;">Yauheni Baranouski</li>
+						<li class="content__container__list__item" style="color:#22EE88;">___good day___</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div id="footer">
 
+		<!--footer start from here-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 footerleft ">
+						<div class="logofooter">Hockey Fanatiks</div>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+							dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+						<p><i class="fa fa-map-pin"></i>Charlotte , NC </p>
+						<p><i class="fa fa-phone"></i>(555)-555-555</p>
+						<p><i class="fa fa-envelope"></i> E-mail : info@hockey_fanatiks.com</p>
+
+					</div>
+					<div class="col-md-2 col-sm-6 paddingtop-bottom">
+						<h6 class="heading7">GENERAL LINKS</h6>
+						<ul class="footer-ul">
+							<li><a href="#"> Career</a></li>
+							<li><a href="#"> Privacy Policy</a></li>
+							<li><a href="#"> Terms & Conditions</a></li>
+							<li><a href="#"> Client Gateway</a></li>
+							<li><a href="#"> Ranking</a></li>
+							<li><a href="#"> Case Studies</a></li>
+							<li><a href="#"> Frequently Ask Questions</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 paddingtop-bottom">
+						<h6 class="heading7">Contributors</h6>
+						<div class="post">
+							<!-- Yauheni -->
+							<p><a href="https://github.com/Johcare">
+                <i class="fa fa-github" aria-hidden="true">Yauheni</i>
+                </a><span></span>Baranouski</p>
+							<!-- Tiara -->
+							<p><a href="https://github.com/Johcare"><i class="fa fa-github" aria-hidden="true">Keith</i></a>Kovach<span></span></p>
+							<!--  -->
+
+							<p><a href="https://github.com/Johcare">
+               <i class="fa fa-github" aria-hidden="true">Tiara</i></a>Hamilton
+								<span></span></p>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 paddingtop-bottom">
+						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false"
+						  style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+							<div class="fb-xfbml-parse-ignore">
+								<blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--footer start from here-->
+
+		<div class="copyright">
+			<div class="container">
+				<div class="col-md-6">
+					<p>© 2017 - All Rights Reserved</p>
+				</div>
+				<div class="col-md-6">
+					<ul class="bottom_ul">
+						<li><a href="#">_______</a></li>
+						<li><a href="#">____________</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Faq's</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/popper/popper.min.js"></script>
@@ -465,7 +543,10 @@
 	<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
 	<!-- Custom scripts for this template -->
+	<!-- <script src="animation/animate.js"></script> -->
 	<!-- <script src="public/javascripts/sb-admin.min.js"></script> -->
+
+
 
 </body>
 
