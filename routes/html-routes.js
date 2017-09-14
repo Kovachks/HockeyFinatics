@@ -40,7 +40,11 @@ router.get("/:team", function(req, res) {
 	db.playerStats.findAll({
 		where: {
 			mascot: team
-		}
+		},
+		include: [
+		{
+			model: db.teaminfo,
+		}]
 	}).then(function(result) {
 	res.render("team", {team:result})
 	console.log("result: " + result)

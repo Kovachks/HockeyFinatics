@@ -10,9 +10,15 @@ module.exports = function(sequelize, DataTypes) {
 		goals: DataTypes.INTEGER,
 		assists: DataTypes.INTEGER,
 		points: DataTypes.INTEGER
-	},
-	{
-	timestamps: false
+	},{
+	timestamps: false,
+	classMethods: {
+		associate: function(models) {
+			playerStats.belongsTo(models.teaminfo, {
+				foreignKey: 'mascot'
+			})
+		}
+	}
 	});
 	return PlayerStats;
 };
