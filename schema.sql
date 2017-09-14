@@ -26,7 +26,6 @@ create table teamStats (
 
 use hockeyStats_db;
 
-select * from playerStats;
 
 create table playerStats (
     id integer(5) auto_increment not null,
