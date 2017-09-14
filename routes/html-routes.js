@@ -45,6 +45,5 @@ router.get("/:team", function(req, res) {
 router.get("/registration", function(reg, res) {
 	res.render(registration)
 })
-// LOGIN PAGE
 
 module.exports = router;
