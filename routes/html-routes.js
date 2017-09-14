@@ -29,18 +29,30 @@ module.exports = function(app) {
 
 router.get("/:team", function(req, res) {
 	var team = req.params.team;
-	// console.log(JSON.stringify(db))
-	db.teaminfo.findOne({
+	// db.teaminfo.findOne({
+	// 	where: {
+	// 		teamMascot: team
+	// 	}
+	// }).then(function(result) {
+	// res.render("team", {team:result})
+	// console.log("result: " + result)
+	// });
+	db.playerStats.findAll({
 		where: {
-			teamMascot: team
-		}
+			mascot: team
+		},
+		include: [
+		{
+			model: db.teaminfo,
+		}]
 	}).then(function(result) {
 	res.render("team", {team:result})
-	console.log(JSON.stringify(result))	
+	console.log("result: " + result)
 	});
 });
+router.get("/registration", function(reg, res) {
+	res.render(registration)
+})
 // LOGIN PAGE
-
-
 
 module.exports = router;
