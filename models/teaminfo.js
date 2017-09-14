@@ -6,13 +6,12 @@ module.exports = function(sequelize, DataTypes) {
 		secondaryColor: DataTypes.STRING
 	},{
 		timestamps: false,
-		classMethods: {
-			associate: function(models) {
-				teaminfo.hasMany(models.playerStats, {
-					foreignKey: 'mascot'
-				});
-			}
-		}
 	});
+
+	TeamInfo.associate = function(models) {
+		TeamInfo.hasMany(models.playerStats, {
+		foreignKey: 'mascot'
+		});
+	}
 	return TeamInfo;
 }

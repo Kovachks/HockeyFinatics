@@ -12,13 +12,12 @@ module.exports = function(sequelize, DataTypes) {
 		points: DataTypes.INTEGER
 	},{
 	timestamps: false,
-	classMethods: {
-		associate: function(models) {
-			playerStats.belongsTo(models.teaminfo, {
-				foreignKey: 'mascot'
-			})
-		}
-	}
 	});
+
+	PlayerStats.associate = function(models) {
+		PlayerStats.belongsTo(models.teaminfo, {
+		foreignKey: 'mascot'
+		});
+	}
 	return PlayerStats;
 };
