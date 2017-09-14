@@ -165,6 +165,7 @@ height: 100px;
 	width: 175px;
 }
 .headerTitle {
+	float: left;
 	text-shadow: 10px -4px 9px black;
 	color: white;
 }
@@ -182,3 +183,17 @@ height: 100px;
 	width: 35px;
 	margin: 0 0 0 16px;
 }
+/* leageICONS$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* #animLogo{
+position: relative;
+}
+#mainNav{
+position: absolute;	
+}
+
+div.networkmenu{
+    width: 1200px;
+    display: inline;
+    float: right;
+    text-align: center;
+} */
