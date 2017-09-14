@@ -46,8 +46,9 @@ router.get("/:team", function(req, res) {
 			model: db.teaminfo,
 		}]
 	}).then(function(result) {
+	console.log("Result: " + JSON.stringify({team:result}))		
 	res.render("team", {team:result})
-	console.log("result: " + result)
+
 	});
 });
 router.get("/registration", function(reg, res) {
