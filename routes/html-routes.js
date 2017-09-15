@@ -35,7 +35,7 @@ router.get("/:team", function(req, res) {
 		},
 		include: [
 		{
-			model: db.teaminfo,
+			model: db.teaminfo
 		}]
 	}).then(function(result) {
 	console.log("Result: " + JSON.stringify({team:result}))		
