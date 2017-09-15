@@ -1,5 +1,7 @@
 use hockeystats_db;
 
+SELECT `gameSchedule`.`id`, `gameSchedule`.`vs`, `gameSchedule`.`opponent`, `gameSchedule`.`mascot`, `gameSchedule`.`date`, `gameSchedule`.`time`, `gameSchedule`.`timezone`, `gameSchedule`.`chanceToWin`, `teaminfo`.`id` AS `teaminfo.id`, `teaminfo`.`mascot` AS `teaminfo.mascot`, `teaminfo`.`teamName` AS `teaminfo.teamName`, `teaminfo`.`primaryColor` AS `teaminfo.primaryColor`, `teaminfo`.`secondaryColor` AS `teaminfo.secondaryColor` FROM `gameSchedules` AS `gameSchedule` LEFT OUTER JOIN `teaminfos` AS `teaminfo` ON `gameSchedule`.`mascot` = `teaminfo`.`mascot` WHERE `gameSchedule`.`mascot` = 'hurricanes';
+
 insert into teaminfos (mascot, teamName, primaryColor, secondaryColor)
 values("mapleleafs", "Toronto Maple Leafs", "#013e7f", "#ffffff");
 
