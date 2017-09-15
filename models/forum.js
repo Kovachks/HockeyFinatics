@@ -1,11 +1,17 @@
 module.exports = function(sequelize, DataTypes) {
     var Topic = sequelize.define("topic", {
-     topic_id: {
+     id: {
          type: DataTypes.INTEGER
     },
-     opAuthor: {
+    team: {
+      type: DataType.STRING
+    },
+     user: {
        type: DataTypes.STRING,
         allowNull: false
+     },
+     create_at: {
+      type: DataTypes.DATETIME
      },     
       subject: {
         type: DataTypes.STRING,
@@ -24,10 +30,10 @@ module.exports = function(sequelize, DataTypes) {
     return Topic;
 
     var Reply = sequelize.define("reply", {
-      topic_id: {
+      id: {
         type: DataTypes.INTEGER
     },
-      author: {
+      user: {
         type: DataTypes.STRING,
         allowNull: false
     },
