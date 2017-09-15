@@ -53,12 +53,13 @@ create table teaminfos (
 
 use hockeyStats_db;
 
+
 create table gameSchedules(
 	id integer(5) auto_increment NOT NULL,
 	mascot VARCHAR(35) NOT NULL,
     vs VARCHAR(5) NOT NULL,
     opponent VARCHAR(40) NOT NULL,
-    date VARCHAR(30) NOT NULL,
+    gameDate date NOT NULL,
     time VARCHAR(30) NOT NULL,
     timezone VARCHAR(3) NOT NULL,
     chanceToWin INTEGER(4) NOT NULL,
