@@ -10,7 +10,7 @@ var expect = require("chai").expect;
 	  .goto("http://localhost:8080/")
 	  .wait(2000)
 	  .click("#bluejackets")
-	  .screenshot("bluejSS.png")
+	  .screenshot("test/bluejSS.png")
 	  .evaluate(function() {
 		return document.title;
 	})
@@ -24,13 +24,13 @@ var expect = require("chai").expect;
 
 describe("test2", function() {
 	this.timeout(20000);
-  it("should go to the Blue Jackets' schedule")	
+  it("should go to the Blue Jackets' schedule", function(done) {	
    Nightmare({ show: true })
     .goto("http://localhost:8080/bluejackets/")
     .click("#bluej")
-    .screenshot("bluesche.png")
+    .screenshot("test/bluesche.png")
     .scrollTo(2000, 0)
-    .screenshot("opponents.png")
+    .screenshot("test/opponents.png")
     .evaluate(function() {
 	  return document.querySelector("a[href='/bluejackets/schedule']");
   })
@@ -38,4 +38,25 @@ describe("test2", function() {
 	expect(schedule).to.not.equal(undefined);
 	done();
   });
+});
+});
+
+describe("test3", function() {
+	this.timeout(20000);
+  it("should return home then click hurricanes", function(done) {	
+   Nightmare({ show: true })
+    .goto("http://localhost:8080/bluejackets/schedule/")
+	.screenshot("test/jackets.png")
+	.click("#home")
+    .screenshot("test/home.png")
+    .click("#canes")
+    .screenshot("test/hurricanes.png")
+    .evaluate(function() {
+	  return document.querySelector("a[href='/hurricanes/']");
+  })
+  .then(function(schedule) {
+	expect(schedule).to.not.equal(undefined);
+	done();
+  });
+});
 });
