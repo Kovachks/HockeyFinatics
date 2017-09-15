@@ -12,6 +12,9 @@
 	margin-bottom: 175px;
 	z-index: -1;
 }
+#copyrightText {
+	text-align: center;
+}
 #teamSchedule {
 	position: relative;
 	top: 200px;
@@ -39,7 +42,8 @@ text-decoration: none;
 		text-decoration: none;
 	}
 		#container-fluid {
-margin-top:120px;
+			position: relative;
+			top: 250px;
 	}
 .fa-home:before{
 	color: #A4A3E7;
