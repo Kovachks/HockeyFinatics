@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
+    "password": "root",
+=======
     "password": "Kihkvc90!",
+>>>>>>> f9f672ad3d3f70789aaf8ec6c800fe496036434e
     "database": "hockeystats_db",
     "host": "localhost",
     "dialect": "mysql"
@@ -10,7 +14,7 @@
     "username": "root",
     "password": null,
     "database": "database_test",
-    "host": "127.0.0.1",
+    "host": "127.0.0.1",       
     "dialect": "mysql"
   },
   "production": {
