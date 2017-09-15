@@ -49,12 +49,15 @@ create table teaminfos (
     teamName VARCHAR(100) NOT NULL,
     primaryColor VARCHAR(10) NOT NULL,
     secondaryColor VARCHAR(10) NOT NULL,
-    primary key(id)
+    primary key(id),
+    foreign key(mascot)
 );
 
 use hockeyStats_db;
 
-create table gameSchedule(
+select * from gameSchedules;
+
+create table gameSchedules(
 	id integer(5) auto_increment NOT NULL,
 	mascot VARCHAR(35) NOT NULL,
     vs VARCHAR(5) NOT NULL,

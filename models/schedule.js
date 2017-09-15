@@ -15,6 +15,10 @@ module.exports = function(sequelize, Datatypes) {
 		GameSchedule.belongsTo(models.teaminfo, {
 			foreignKey: 'mascot',
 			targetKey: 'mascot'
+		})
+		GameSchedule.belongsTo(moels.teaminfo, {
+			foreignKey: 'mascot',
+			targetKey: 'mascot'
 		});
 	}
 	return GameSchedule
