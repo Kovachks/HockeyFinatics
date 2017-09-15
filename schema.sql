@@ -53,9 +53,6 @@ create table teaminfos (
 
 use hockeyStats_db;
 
-ALTER TABLE gameSchedules ORDER BY date ASC;
-
-use hockeyStats_db;
 
 create table gameSchedules(
 	id integer(5) auto_increment NOT NULL,
