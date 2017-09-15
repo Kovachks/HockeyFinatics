@@ -3,39 +3,39 @@
 var Nightmare = require("nightmare");
 var expect = require("chai").expect;
 
-describe("testing", function() {	
-	this.timeout(1500);
   describe("testing logo", function() {
+	  this.timeout(20000);
   it("should go to Blue Jackets' homepage", function(done) {
-	var nightmare = Nightmare();
-	nightmare ({ show: true })
+	Nightmare ({ show: true })
 	  .goto("http://localhost:8080/")
+	  .wait(2000)
 	  .click("#bluejackets")
 	  .screenshot("bluejSS.png")
 	  .evaluate(function() {
-		return document.page;
+		return document.title;
 	})
 	.end()
-	.then(function(page) {
-	  expect(page).to.equal("http://localhost:8080/bluejackets/");
+	.then(function(title) {
+	  expect(title).to.equal("NHL Fanatics");
 	  done();
 	});
 	});
 });
 
-//   it("should go to the Blue Jackets' schedule")	
-//    nightmare({ show: true })
-//     .goto("http://localhost:8080/")
-//     .click("#bluejackets")
-//     .click("#bluej")
-//     .screenshot("bluesche.png")
-//     .scrollto(4736, 0)
-//     .screenshot("opponents.png")
-//     .evaluate(function() {
-// 	  return document.querySelector("a[href='/bluejackets/schedule']");
-//   })
-//   .then(function(schedule) {
-// 	expect(schedule).to.not.equal(undefined);
-// 	done();
-//   });
-// });
+describe("test2", function() {
+	this.timeout(20000);
+  it("should go to the Blue Jackets' schedule")	
+   Nightmare({ show: true })
+    .goto("http://localhost:8080/bluejackets/")
+    .click("#bluej")
+    .screenshot("bluesche.png")
+    .scrollTo(2000, 0)
+    .screenshot("opponents.png")
+    .evaluate(function() {
+	  return document.querySelector("a[href='/bluejackets/schedule']");
+  })
+  .then(function(schedule) {
+	expect(schedule).to.not.equal(undefined);
+	done();
+  });
+});
