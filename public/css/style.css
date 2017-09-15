@@ -34,9 +34,18 @@ text-decoration: none;
 		#container-fluid {
 margin-top:120px;
 	}
+.fa-home:before{
+	color: #A4A3E7;
+	    font-size: x-large
+}
+.fa-group:before,
+.fa-users:before{
+	color: #A4A3E7;
+}
 		div#navbarResponsive.collapse.navbar-collapse {
 			width: 100%;
-			/* padding-left: 200px; */
+			/* margin-top: 100px; */
+			/* padding-top: 200px; */
 			margin-left:100px;
 		/* padding-right: 50px; */
 			text-align: center;
@@ -47,7 +56,7 @@ margin-top:120px;
   		.navbar-dark .navbar-nav .nav-link{
 				max-width: 100%;
 				font-size: 18px;
-				color: snow;
+				color: #121601;
 			margin-right: 50px;
 			text-align: center;
 
@@ -164,10 +173,21 @@ height: 100px;
 	height: 175px;
 	width: 175px;
 }
+#pipa{
+	font-size: 1em;
+	font-weight: bold;
+	color: #26F0F0;
+	width: 383px;
+}
+#pipa:hover{
+	color: #F8E95F;
+}
 .headerTitle {
+ margin-top: 40px;
 	float: left;
 	text-shadow: 10px -4px 9px black;
 	color: white;
+	margin-left: 50px;
 }
 @media (min-width: 576px) {
 	.eight-cols .col-sm-1 {
@@ -184,16 +204,31 @@ height: 100px;
 	margin: 0 0 0 16px;
 }
 /* leageICONS$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-/* #animLogo{
-position: relative;
+ #animLogo{
+	 width: 150px;
 }
 #mainNav{
 position: absolute;	
 }
+.fa fa-get-pocket{
+	color: indianred;
+}
+
+	#LigaIcons{
+		margin-right: 218px;
+		/* height: 800px; */
+		width:auto;
+	}
+	.leaguenav{
+		height: 300px;
+			width: 1020px;
+		}	
 
 div.networkmenu{
-    width: 1200px;
+
+	height: 200px;
+    width: 1100px;
     display: inline;
     float: right;
     text-align: center;
-} */
+}
