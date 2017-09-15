@@ -1,8 +1,8 @@
-drop database if exists hockeyStats_db;
-
-create database hockeyStats_db;
+create database if not exists hockeyStats_db;
 
 use hockeyStats_db;
+
+set foreign_key_checks=0;
 
 create table userdata (
 id integer(5) auto_increment not null,
@@ -45,11 +45,24 @@ use hockeyStats_db;
 
 create table teaminfos (
 	id integer(5) Auto_Increment NOT NULL,
-    teamMascot VARCHAR(30) NOT NULL,
+    mascot VARCHAR(35) NOT NULL,
     teamName VARCHAR(100) NOT NULL,
     primaryColor VARCHAR(10) NOT NULL,
     secondaryColor VARCHAR(10) NOT NULL,
     primary key(id)
 );
 
+use hockeyStats_db;
 
+create table gameSchedule(
+	id integer(5) auto_increment NOT NULL,
+	mascot VARCHAR(35) NOT NULL,
+    vs VARCHAR(5) NOT NULL,
+    opponent VARCHAR(40) NOT NULL,
+    date VARCHAR(30) NOT NULL,
+    time VARCHAR(30) NOT NULL,
+    timezone VARCHAR(3) NOT NULL,
+    chanceToWin INTEGER(4) NOT NULL,
+    primary key(id)
+);
+    
