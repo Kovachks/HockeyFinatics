@@ -15,8 +15,8 @@ module.exports = function(sequelize, DataTypes) {
 		foreignKey: 'mascot'
 		}),
 		TeamInfo.hasMany(models.gameSchedule, {
-		foreignKey: 'mascot'
-		});
+			foreignKey: 'mascot'
+		})
 	}
 	return TeamInfo;
 }

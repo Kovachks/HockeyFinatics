@@ -3,7 +3,7 @@ module.exports = function(sequelize, Datatypes) {
 		vs: Datatypes.STRING,
 		opponent: Datatypes.STRING,
 		mascot: Datatypes.STRING,
-		date: Datatypes.STRING,
+		gameDate: Datatypes.DATE,
 		time: Datatypes.STRING,
 		timezone: Datatypes.STRING,
 		chanceToWin: Datatypes.INTEGER
@@ -11,15 +11,11 @@ module.exports = function(sequelize, Datatypes) {
 		timestamps: false,
 	});
 
-	GameSchedule.associaet = function(models) {
+	GameSchedule.associate = function(models) {
 		GameSchedule.belongsTo(models.teaminfo, {
 			foreignKey: 'mascot',
 			targetKey: 'mascot'
 		})
-		GameSchedule.belongsTo(moels.teaminfo, {
-			foreignKey: 'mascot',
-			targetKey: 'mascot'
-		});
 	}
 	return GameSchedule
 };
