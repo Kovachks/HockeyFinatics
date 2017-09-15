@@ -13,33 +13,25 @@
         <a class="nav-link" href="#">Roster</a>
       </li>
   </ul>
-<h2 class="sectionHeader">Team Roster</h2>
-<table class="table table-inverse" id="playerStats">
+<h2 class="sectionHeader">Schedule</h2>
+<table class="table table-inverse" id="teamSchedule">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Nationality</th>
-      <th>Team</th>
-      <th>Position</th>
-      <th>Games Played</th>
-      <th>Goals</th>
-      <th>Assists</th>
-      <th>Points</th>
+      <th>Date</th>
+      <th>Opponent</th>
+      <th>Time</th>
+      <th>Timezone</th>
+      <th>% To Win</th>
     </tr>
   </thead>
   <tbody>
     {{#each team}}
     <tr>
-      <td>{{name}}</td>
-      <td>{{age}}</td>
-      <td>{{nationality}}</td>
-      <td>{{team}}</td>
-      <td>{{position}}</td>
-      <td>{{games_played}}</td>
-      <td>{{goals}}</td>
-      <td>{{assists}}</td>
-      <td>{{points}}</td>
+      <td>{{gameDate}}</td>
+      <td>{{vs}}<img src="/images/{{opponent}}.png" alt="" class="scheduleImage"></td>
+      <td>{{time}}</td>
+      <td>{{timezone}}</td>
+      <td>{{chanceToWin}}</td>
     </tr>
     {{/each}}
   </tbody>
