@@ -18,6 +18,10 @@ module.exports = function(sequelize, DataTypes) {
 		PlayerStats.belongsTo(models.teaminfo, {
 		foreignKey: 'mascot',
 		targetKey: 'mascot'
+		}),
+		PlayerStats.belongsTo(models.gameSchedule, {
+			foreignKey: 'mascot',
+			targetKey: 'mascot'
 		});
 	}
 	return PlayerStats;
