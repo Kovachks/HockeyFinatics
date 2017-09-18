@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 footer {
-  background-color: #755215;
+  background-color: #757677;
   min-height: 350px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -55,8 +55,13 @@ footer {
 
 .footer-ul li a:hover {
   transition: color 0.2s linear 0s, background 0.2s linear 0s;
-  color: #ff670f;
+  color: red;
 }
+
+i:hover {
+color: red;  
+}
+
 
 .social:hover {
   -webkit-transform: scale(1.1);
@@ -83,7 +88,7 @@ footer {
 
 .copyright {
   min-height: 40px;
-  background-color: #000000;
+  background-color: #757677;
 }
 
 .copyright p {

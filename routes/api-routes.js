@@ -7,7 +7,12 @@ module.exports = function(app) {
 			res.json(dbTopic);
 		});
 	});
-
+ 	app.post("/registration/login/submit", function(req, res) {
+ 		console.log("registration")
+	    db.user.create(req.body).then(function(dbPost) {
+	      res.json(dbPost);
+	    });
+  	});
 	app.post("/api/forum/team/:team", function(req, res) {
 		console.log(req.body);
 		db.Topic.findAll ({
@@ -65,58 +70,3 @@ module.exports = function(app) {
 		});
 	});
 };
-
-module.exports = function(app) {
-	app.get("/api/forum/", function(req, res) {
-		db.Reply.findAll({})
-		.then(function(dbReply) {
-			res.json(dbReply);
-		});
-	});
-
-	app.get("/api/forum/:id", function(req, res) {
-    db.Reply.findOne({
-      where: {
-        id: req.params.id
-      }
-    })
-    .then(function(dbReply) {
-      res.json(dbReply);
-    });
-	});
-
-	app.get("/api/forum/:user", function(req, res) {
-    db.Reply.findOne({
-      where: {
-        user: req.params.user
-      }
-    })
-    .then(function(dbReply) {
-      res.json(dbReply);
-    });
-	});
-	
-	app.post("/api/forum", function(req, res) {
-		console.log(req.body);
-		db.Reply.create ({
-			user: req.body.user,
-		  subject: req.body.subject,
-		  content: req.body.content
-		})
-		.then(function(dbReply) {
-			res.json(dbReply);
-		});
-	});
-		  
-	app.delete("/api/forum/:id", function(req, res) {
-		db.Reply.destroy ({
-			where: {
-				id: req.params.id
-			}
-		})
-		.then(function(dbReply) {
-			res.json(dbReply);
-		});
-	});
-};
-

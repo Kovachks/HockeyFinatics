@@ -58,7 +58,7 @@ insert into teaminfos (mascot, teamName, primaryColor, secondaryColor)
 values("devils","New Jersey Devils", "#c8102e", "#010101");
 
 insert into teaminfos (mascot, teamName, primaryColor, secondaryColor)
-values("islanders","New York Islanders", "#003087", "#f57d31");
+values("islanders","New York Islanders", "#003087", "#fcfc02");
 
 insert into teaminfos (mascot, teamName, primaryColor, secondaryColor)
 values("rangers","New York Rangers", "#0033a0", "#c8102e");

@@ -1,6 +1,17 @@
 .nav-link{
 	color: white;
 }
+#home {
+	background-color: #343a40;
+}
+#actualNav {
+	position: fixed;
+	color: white;
+	top: 175px;
+	z-index: 1;
+	width: 100%;
+	background-color: #343a40;
+}
 .nav-link:hover {
 	color: grey;	
 }
@@ -22,92 +33,66 @@
 	margin: 0px 5% 100px 5%;
 	z-index: -1;
 }
-
 #alinkcolor{
 	color:#151617;
 }
-	#alink {
-		width: 200px;
-		text-align: center;
-		margin: auto;
-		padding: auto;
-		border-radius: 10px;
-		background-color:#5E89C1;
-		color:black;
-list-style:none;
-text-decoration: none;
+#alink {
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	padding: auto;
+	border-radius: 10px;
+	background-color:#5E89C1;
+	color:black;
+	list-style:none;
+	text-decoration: none;
 }
-	#alink :hover{
-		color:rgba(96, 12, 0, 0.93);
-		text-decoration: none;
-	}
-		#container-fluid {
-			position: relative;
-			top: 250px;
-	}
-.fa-home:before{
+#alink :hover{
+	color:rgba(96, 12, 0, 0.93);
+	text-decoration: none;
+}
+#container-fluid {
+	position: relative;
+	top: 250px;
+}
+.fa-home:before {
 	color: #A4A3E7;
-	    font-size: x-large
+    font-size: x-large
 }
 .fa-group:before,
 .fa-users:before{
 	color: #A4A3E7;
 }
-		div#navbarResponsive.collapse.navbar-collapse {
-			width: 100%;
-			/* margin-top: 100px; */
-			/* padding-top: 200px; */
-			margin-left:100px;
-		/* padding-right: 50px; */
-			text-align: center;
-			position: relative;
-			float: right;
-			max-width: 500px;
-	}
-  		.navbar-dark .navbar-nav .nav-link{
-				max-width: 100%;
-				font-size: 18px;
-				color: #121601;
-			margin-right: 50px;
-			text-align: center;
+.navbar-dark .navbar-nav .nav-link {
+	max-width: 100%;
+	font-size: 18px;
+	color: #121601;
+	margin-right: 50px;
+	text-align: center;
 
-		}
-		.wrapper{
-			text-align: center;
-			 margin:0 auto;
-			 width:200px;
+}
+.wrapper{
+	text-align: center;
+	margin:0 auto;
+	width:200px;
 			
-		}
-			#myBtn {
-
-			text-align: center;
-font-size: 40px;
-height: 100px;
-/* width: 20px; */
-
-		}
-#login{
+}
+#myBtn {
+	text-align: center;
+	font-size: 40px;
+	height: 100px;
+	}
+#login {
 	color:#333;
 	font-size: 20px;
 	font-weight: bold;
 
 }
-
-/* div#loginContainer.container{
-	 box-shadow: 20px 12px 20px 0px black;
-	    margin-right: auto;
-			 margin-left: auto;
-	     width: 100%;
-	
-	
-} */
-#cardHeader{
+#cardHeader {
 	color:beige;
 	font-size: 20px;
 	background-color: #d33;
 }
-
-/* ***************************************************************** */
 .nav {
 	position: fixed;
 	top: 130px;
@@ -118,6 +103,14 @@ height: 100px;
 	top: 0;
 	width: 100%;
 	height: 130px;
+}
+.navButton {
+	line-height: 50px;
+	height: 50px;
+	width: 125px;	
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
 }
 #teamLogo {
 	position: relative;
@@ -138,7 +131,6 @@ height: 100px;
 	margin: 0;
 }
 .teamTableImage {
-	
 	width: 65px;
 	height: 50px;
 }
@@ -171,10 +163,10 @@ height: 100px;
 	color: white;
 }
 .easternDivision{
-	font-size: 20px;
+	font-size: 18px;
 }
 .westernDivision{
-	font-size: 20px;
+	font-size: 18px;
 }
 #teamTable {
 	width: 900px;
@@ -188,6 +180,13 @@ height: 100px;
 	height: 175px;
 	width: 175px;
 }
+#slogan {
+	position: absolute;
+	top: 130px;
+	left: 180px;
+	text-shadow: 10px -4px 9px black;
+	color: white;
+}
 #pipa{
 	font-size: 1em;
 	font-weight: bold;
@@ -198,11 +197,12 @@ height: 100px;
 	color: #F8E95F;
 }
 .headerTitle {
- margin-top: 40px;
-	float: left;
+ 	position: absolute;
+ 	margin-top: 40px;
+ 	left:180px;
+ 	top: 40px;
 	text-shadow: 10px -4px 9px black;
 	color: white;
-	margin-left: 50px;
 }
 @media (min-width: 576px) {
 	.eight-cols .col-sm-1 {
@@ -221,29 +221,21 @@ height: 100px;
 	width: 35px;
 	margin: 0 0 0 16px;
 }
-/* leageICONS$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
  #animLogo{
 	 width: 150px;
-}
-#mainNav{
-position: absolute;	
 }
 .fa fa-get-pocket{
 	color: indianred;
 }
-
-	#LigaIcons{
-		margin-right: 218px;
-		/* height: 800px; */
-		width:auto;
-	}
-	.leaguenav{
-		height: 300px;
-			width: 1020px;
-		}	
-
+#LigaIcons{
+	margin-right: 218px;
+	width:auto;
+}
+.leaguenav{
+	height: 300px;
+	width: 1020px;
+}	
 div.networkmenu{
-
 	height: 200px;
     width: 1100px;
     display: inline;

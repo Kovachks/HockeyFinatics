@@ -1,6 +1,16 @@
 create database if not exists hockeyStats_db;
 
+
+set foreign_key_checks=0;
+
+
 use hockeyStats_db;
+
+CREATE TABLE IF NOT EXISTS `teaminfos` (`mascot` VARCHAR(255), `teamName` VARCHAR(255), `primaryColor` VARCHAR(255), `secondaryColor` VARCHAR(255), PRIMARY KEY (`mascot`)) ENGINE=InnoDB;
+
+CREATE TABLE `gameSchedules` (`id` INTEGER NOT NULL auto_increment , `vs` VARCHAR(255), `opponent` VARCHAR(255), `mascot` VARCHAR(255), `gameDate` DATE, `time` VARCHAR(255), `timezone` VARCHAR(255), `chanceToWin` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`mascot`) REFERENCES `teaminfos` (`mascot`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+
+
 
 create table userdata (
 id integer(5) auto_increment not null,
@@ -24,7 +34,6 @@ create table teamStats (
 
 use hockeyStats_db;
 
-
 create table playerStats (
     id integer(5) auto_increment not null,
     name varchar(35) not null,
@@ -44,24 +53,23 @@ use hockeyStats_db;
 
 create table teaminfos (
 	id integer(5) Auto_Increment NOT NULL,
-    mascot VARCHAR(30) NOT NULL,
-    teamName VARCHAR(100) NOT NULL,
-    primaryColor VARCHAR(10) NOT NULL,
-    secondaryColor VARCHAR(10) NOT NULL,
+    mascot VARCHAR(255) NOT NULL,
+    teamName VARCHAR(255) NOT NULL,
+    primaryColor VARCHAR(255) NOT NULL,
+    secondaryColor VARCHAR(255) NOT NULL,
     primary key(id)
 );
 
 use hockeyStats_db;
 
-
 create table gameSchedules(
 	id integer(5) auto_increment NOT NULL,
-	mascot VARCHAR(35) NOT NULL,
-    vs VARCHAR(5) NOT NULL,
-    opponent VARCHAR(40) NOT NULL,
+	mascot VARCHAR(255) NOT NULL,
+    vs VARCHAR(255) NOT NULL,
+    opponent VARCHAR(255) NOT NULL,
     gameDate date NOT NULL,
-    time VARCHAR(30) NOT NULL,
-    timezone VARCHAR(3) NOT NULL,
+    time VARCHAR(255) NOT NULL,
+    timezone VARCHAR(255) NOT NULL,
     chanceToWin INTEGER(4) NOT NULL,
     primary key(id)
 );

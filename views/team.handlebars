@@ -1,17 +1,18 @@
-  <div id="header" style="background-color:{{team.0.teaminfo.primaryColor}}">
-    <img src="/images/{{team.0.mascot}}.png" alt="" id="teamLogo" style="height: 100px; width: 150px;">
+<div id="header" style="background-color:{{team.0.teaminfo.primaryColor}}">
+    <a href="/#"><img src="/images/{{team.0.mascot}}.png" alt="" id="teamLogo" style="height: 100px; width: 150px;"></a>
       <h1 class="teamName" style="color: white">{{team.0.teaminfo.teamName}}</h1>
   </div>
   <ul class="nav" id="nav" style="background-color: {{team.0.teaminfo.secondaryColor}}"> 
       <li class="nav-item">
-        <a class="nav-link active" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="bluej" href="/{{team.0.mascot}}/schedule">Schedule</a>
+       
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Roster</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" id="bluej" href="/{{team.0.mascot}}/schedule">Schedule</a>
       </li>
+
   </ul>
 <h2 class="sectionHeader">Team Roster</h2>
 <table class="table table-inverse" id="playerStats">

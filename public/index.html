@@ -9,270 +9,37 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>Hockey Fanatics</title>
-
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Custom fonts for this template -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Plugin CSS -->
 	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-	<!-- animatetedd -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="animation/animate.css">
 	<link rel="stylesheet" href="css/footer.css">
-	<!-- Custom styles for this template -->
+
 
 
 
 </head>
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top">
-
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-		<!-- __________________________________________________________ -->
+<body id="home">
+	<div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
 		<div id="animLogo">
-			<img src="/images/nhl.png" alt="" class="logo">
-			<div id="paraAnim">
-				<p id="pipa">Your one stop shop for Hockey news!</p>
-			</div>
+			<a href="/"><img src="/images/nhl.png" alt="" class="logo"></a>
 		</div>
-		<!-- __________________________________________________________ -->
-		<div id="LigaIcons">
-<!-- <div class="networkmenu"> <span class="team_nav_icon"><a href="http://www.bakersfieldcondors.com/" target="_blank" title="Bakersfield Condors"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/bakersfield64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.bellevillesens.com/" target="_blank" title="Belleville Senators"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/belleville17_64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.binghamtondevils.com/" target="_blank" title="Binghamton Devils"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/binghamton17_64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.soundtigers.com/" target="_blank" title="Bridgeport Sound Tigers"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/bridgeport64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.gocheckers.com/" target="_blank" title="Charlotte Checkers"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/charlotte64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.chicagowolves.com/" target="_blank" title="Chicago Wolves"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/chicago64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.clevelandmonsters.com/" target="_blank" title="Cleveland Monsters"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/cleveland64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.griffinshockey.com/" target="_blank" title="Grand Rapids Griffins"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/grandrapids64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.hartfordwolfpack.com/" target="_blank" title="Hartford Wolf Pack"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/hartford64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.hersheybears.com/" target="_blank" title="Hershey Bears"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/hershey64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.iowawild.com/" target="_blank" title="Iowa Wild"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/iowa64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.rocketlaval.com/" target="_blank" title="Laval Rocket"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/laval64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.phantomshockey.com/" target="_blank" title="Lehigh Valley Phantoms"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/lehighvalley64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://moosehockey.com/" target="_blank" title="Manitoba Moose"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/manitoba64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.milwaukeeadmirals.com/" target="_blank" title="Milwaukee Admirals"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/milwaukee64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.ontarioreign.com/" target="_blank" title="Ontario Reign"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/ontario64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.providencebruins.com/" target="_blank" title="Providence Bruins"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/providence64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.amerks.com/" target="_blank" title="Rochester Americans"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/rochester64-1.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.icehogs.com/" target="_blank" title="Rockford IceHogs"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/rockford64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.sarampage.com/" target="_blank" title="San Antonio Rampage"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/sanantonio64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.sandiegogulls.com/" target="_blank" title="San Diego Gulls"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/sandiego64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.sjbarracuda.com/" target="_blank" title="San Jose Barracuda"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/sanjose64-1.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.springfieldthunderbirds.com/" target="_blank" title="Springfield Thunderbirds"><img width="30" height=30"" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/springfield64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://stocktonheat.com/" target="_blank" title="Stockton Heat"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/stockton64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.syracusecrunch.com/" target="_blank" title="Syracuse Crunch"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/syracuse64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.texasstars.com/" target="_blank" title="Texas Stars"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/texas64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.marlies.ca/" target="_blank" title="Toronto Marlies"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/toronto64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.tucsonroadrunners.com/" target="_blank" title="Tucson Roadrunners"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/tucson64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.uticacomets.com/" target="_blank" title="Utica Comets"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2016/04/utica64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span>	<span class="team_nav_icon"><a href="http://www.wbspenguins.com/" target="_blank" title="W-B/Scranton Penguins"><img width="30" height="30" src="http://league.theahl.hockeytech.com/wp-content/uploads/sites/3/2017/05/wbs64.png" class="attachment-thumbnail size-thumbnail" alt=""></a></span></span> -->
+		<div>
 			<h2 class="headerTitle">Hockey Fanatics</h2>
-<div class="collapse navbar-collapse" id="navbarResponsive">
-	<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-		<li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
-<a class="nav-link" href="/"><span class="nav-link-text"><i class="fa fa-home" aria-hidden="true"></i>
-</span></a>
-		</li>
-
-		<ul class="sidenav-second-level collapse" id="collapseComponents">
-			<li>
-				<a href="static-nav.html">Static Navigation</a>
-			</li>
-			<li>
-				<a href="#">Custom Card Examples</a>
-			</li>
-		</ul>
-
-		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-			<a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-<i class="fa fa-users" aria-hidden="true"></i>
-<span class="nav-link-text">
-                connect</span>
-            </a>
-			<ul class="sidenav-second-level collapse" id="collapseExamplePages">
-				<li id="alink">
-					<a href="/login " id="alinkcolor">Login Page</a>
-				</li><br>
-				<li id="alink">
-					<a href="/registration" id="alinkcolor">Registration Page</a>
-				</li><br>
-				<li id="alink">
-					<a href="/forgot-password " id="alinkcolor">Forgot Password Page</a>
-				</li><br>
-				<li id="alink">
-					<a href="/contact " id="alinkcolor">Contact Us</a>
-					<!-- id="alinkcolor" -->
-				</li><br>
-			</ul>
-		</li>
-
-		<ul class="sidenav-second-level collapse" id="collapseMulti">
-			<li>
-				<a href="#">Second Level Item</a>
-			</li>
-			<li>
-				<a href="#">Second Level Item</a>
-			</li>
-			<li>
-				<a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-				<ul class="sidenav-third-level collapse" id="collapseMulti2">
-					<li>
-						<a href="#">Third Level Item</a>
-					</li>
-					<li>
-						<a href="#">Third Level Item</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-
-
-
-		<li class="nav-item dropdown">
-
-			<div class="dropdown-menu" aria-labelledby="alertsDropdown">
-				<h6 class="dropdown-header">New Alerts:</h6>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">
-                <span class="text-success">
-                  <strong>
-                    <i class="fa fa-long-arrow-up"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">
-                <span class="text-danger">
-                  <strong>
-                    <i class="fa fa-long-arrow-down"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">
-                <span class="text-success">
-                  <strong>
-                    <i class="fa fa-long-arrow-up"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item small" href="#">
-                View all alerts
-              </a>
-			</div>
-		</li>
-
-		<li class="nav-item">
-			<a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-              <i class="fa fa-fw fa-sign-out"></i>
-              Logout</a>
-		</li>
-	</ul>
-</div>
-
-
+			<p id="slogan">Your one stop shop for hockey related information!</p>
 		</div>
-		<!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-		  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-			</button> -->
-
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-				<li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
-					<!-- <a class="nav-link" href="#"><span class="nav-link-text"> Home</span></a> -->
-				</li>
-
-				<ul class="sidenav-second-level collapse" id="collapseComponents">
-					<li>
-						<a href="static-nav.html">Static Navigation</a>
-					</li>
-					<li>
-						<a href="#">Custom Card Examples</a>
-					</li>
-				</ul>
-				</li>
-				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-					<!-- <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion"> -->
-             
-         
-                <!-- Teams</span> -->
-            <!-- </a>
-					<ul class="sidenav-second-level collapse" id="collapseExamplePages">
-						<li id="alink">
-							<a href="/login " id="alinkcolor">Login Page</a>
-						</li><br>
-						<li id="alink">
-							<a href="/registration" id="alinkcolor">Registration Page</a>
-						</li><br>
-						<li id="alink">
-							<a href="/forgot-password" id="alinkcolor">Forgot Password Page</a>
-						</li><br>
-						<li id="alink">
-							<a href="/contact " id="alinkcolor">Contact Us</a>
-							<!-- id="alinkcolor" -->
-						<!-- </li><br>
-					</ul>
-				</li> --> 
-
-				<ul class="sidenav-second-level collapse" id="collapseMulti">
-					<li>
-						<a href="#">Second Level Item</a>
-					</li>
-					<li>
-						<a href="#">Second Level Item</a>
-					</li>
-					<li>
-						<a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-						<ul class="sidenav-third-level collapse" id="collapseMulti2">
-							<li>
-								<a href="#">Third Level Item</a>
-							</li>
-							<li>
-								<a href="#">Third Level Item</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				</li>
-
-
-				<li class="nav-item dropdown">
-
-					<div class="dropdown-menu" aria-labelledby="alertsDropdown">
-						<h6 class="dropdown-header">New Alerts:</h6>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">
-                <span class="text-success">
-                  <strong>
-                    <i class="fa fa-long-arrow-up"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">
-                <span class="text-danger">
-                  <strong>
-                    <i class="fa fa-long-arrow-down"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">
-                <span class="text-success">
-                  <strong>
-                    <i class="fa fa-long-arrow-up"></i>
-                    Status Update</strong>
-                </span>
-                <span class="small float-right text-muted">11:21 AM</span>
-                <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-              </a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item small" href="#">
-                View all alerts
-              </a>
-					</div>
-				</li>
-
-				<li class="nav-item">
-					<!-- <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-              <i class="fa fa-fw fa-sign-out"></i>
-              Logout</a> -->
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-				
+	</div>
+	<div id="actualNav">
+		<ul id="buttonDiv">
+			<li class="navButton" id="leftNavButton"><a href="/request/login" class="nav-link">Login</a></li>
+			<li class="navButton" id="leftNavButton"><a href="/request/register" class="nav-link">Register</a></li>
+		</ul>	
+	</div>
 		<div class="container-fluid" id="container-fluid">
 			<div class="card mb-2">
 				<div class="card-header" id="card-header">
@@ -535,22 +302,11 @@
 
 	<div class="wrapper">
 
-		<a class="scroll-to-top rounded" href="#page-top" id="myBtn">
-     <i class="fa fa-get-pocket" style="color:#F8E95F;" aria-hidden="true"></i></a>
+		<!-- <a class="scroll-to-top rounded" href="#page-top" id="myBtn">
+     <i class="fa fa-get-pocket" style="color:#0645ad;" aria-hidden="true"></i></a> -->
 		<!-- ANIMATION -->
 		<div id="poverh">
 			<div class="content">
-				<div class="content__container">
-					<p class="content__container__text" style="color:cornflowerblue;">
-						Hockey-Fanatiks:
-					</p>
-					<ul class="content__container__list">
-						<li class="content__container__list__item" style="color:#EC8080;"><i class="fa fa-heart-o" aria-hidden="true"></i> Tiara Hamilton</li>
-						<li class="content__container__list__item" style="color:#4FD2CC;">Keith Kovach</li>
-						<li class="content__container__list__item" style="color:#F8E95F;">Yauheni Baranouski</li>
-						<li class="content__container__list__item" style="color:#22EE88;">___good day___</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -561,35 +317,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-sm-4 footerleft">
-						<div class="logofooter">Hockey Fanatiks</div>
-						<p><i class="fa fa-map-pin"></i>Charlotte , NC </p>
-						<p><i class="fa fa-phone"></i>(555)-555-555</p>
-						<p><i class="fa fa-envelope"></i> E-mail : info@hockey_fanatiks.com</p>
+						<div class="logofooter">Hockey Fanatics</div>
+						<p style="font-size: 18px;"><i class="fa fa-map-marker"></i>Charlotte, NC</p>
+				
 
 					</div>
 					<div class="col-md-4 col-sm-4 paddingtop-bottom">
-						<h6 class="heading7">GENERAL LINKS</h6>
+						<h6 class="heading7"></h6>
 						<ul class="footer-ul">
-							<li><a href="#"> Career</a></li>
-							<li><a href="#"> Privacy Policy</a></li>
-							<li><a href="#"> Terms & Conditions</a></li>
-							<li><a href="#"> Frequently Ask Questions</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"> </a></li>
+							<li><a href="#"> </a></li>
+							<li><a href="#"> </a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-sm-4 paddingtop-bottom">
-						<h6 class="heading7">Contributors</h6>
-						<div class="post">
-							<!-- Yauheni -->
-							<p><a href="https://github.com/Johcare">
-                <i class="fa fa-github" aria-hidden="true">Yauheni</i>
-                </a><span></span>Baranouski</p>
-							<!-- Tiara -->
-							<p><a href="https://github.com/kovachks"><i class="fa fa-github" aria-hidden="true">Keith</i></a>Kovach<span></span></p>
-							<!--  -->
-
-							<p><a href="https://github.com/THcodr63">
-               <i class="fa fa-github" aria-hidden="true">Tiara</i></a>Hamilton
-								<span></span></p>
+						<h6 class="heading7">Creator Links</h6>
+						<div id="hoveLink" class="post">
+							<p style="font-size: 18px;"><a href="https://github.com/kovachks"><i class="fa fa-github" aria-hidden="true">Keith Kovach</i></a></p>
+							<p style="font-size: 18px;"><a href="https://github.com/THcodr63"><i class="fa fa-github" aria-hidden="true">Tiara Hamilton</i></a></p>
+							<p style="font-size: 18px;"><a href="https://github.com/Johcare"><i class="fa fa-github" aria-hidden="true">Yauheni Baranouski</i></a></p>	
 						</div>
 					</div>
 				</div>
@@ -600,7 +347,7 @@
 		<div class="copyright">
 			<div class="container">
 				<div class="col-md-12">
-					<p id="copyrightText">© 2017 - All Rights Reserved</p>
+					<p style="font-size: 12px;" id="copyrightText">© 2017 - All Rights Reserved</p>
 				</div>
 			</div>
 		</div>

@@ -1,28 +1,22 @@
 module.exports = function(sequelize, DataTypes) {
-	var PlayerStats = sequelize.define("playerStats", {
-		name: DataTypes.STRING,
-		age: DataTypes.INTEGER,
-		nationality: DataTypes.STRING,
-		team: DataTypes.STRING,
-		mascot: DataTypes.STRING,
-		position: DataTypes.STRING,
-		games_played: DataTypes.INTEGER,
-		goals: DataTypes.INTEGER,
-		assists: DataTypes.INTEGER,
-		points: DataTypes.INTEGER
+	var TeamInfo = sequelize.define("teaminfo", {
+		mascot: {
+			type: DataTypes.STRING,
+			primaryKey: true
+		},
+		teamName: DataTypes.STRING,
+		primaryColor: DataTypes.STRING,
+		secondaryColor: DataTypes.STRING
 	},{
-	timestamps: false,
+		timestamps: false,
 	});
-
-	PlayerStats.associate = function(models) {
-		PlayerStats.belongsTo(models.teaminfo, {
-		foreignKey: 'mascot',
-		targetKey: 'mascot'
-		}),
-		PlayerStats.belongsTo(models.gameSchedule, {
-			foreignKey: 'mascot',
-			targetKey: 'mascot'
+	TeamInfo.associate = function(models) {
+		TeamInfo.hasMany(models.playerStats, {
+		foreignKey: 'mascot'
 		});
+		TeamInfo.hasMany(models.gameSchedule, {
+			foreignKey: 'mascot'
+		})
 	}
-	return PlayerStats;
+	return TeamInfo
 };
